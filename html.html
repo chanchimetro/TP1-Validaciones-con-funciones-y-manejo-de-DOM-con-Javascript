@@ -34,19 +34,18 @@
 
     <h3>Tus notas:</h3>
     <ul>
-        <li id="limatematica">Matematica: </li>
-        <li id="lilengua">Lengua: </li>
-        <li id="liefsi">EFSI: </li>
+        <li style="margin-bottom: 5px;" id="limatematica">Matematica: <div id="notamatematica"></div></li>
+        <li style="margin-bottom: 5px;"  id="lilengua">Lengua: <div id="notalengua"></div></li>
+        <li id="liefsi">EFSI: <div id="notaefsi"></div></li>
     </ul>
-
+    <br>
+    <img id ="img" src="imgs/monkey-neutral.gif" alt="foto">
+    <br>
     <button onclick="sacarPromedio()">Promedio</button>
     <button onclick="sacarMayorNota()">Mayor nota</button>
-
-    <div>
-        <img id ="img" src="imgs/monkey-neutral.gif" alt="foto">
-    
-        <div style="margin-top: 5px;" id="resultado"></div>
-    </div>
+    <p style="margin-top: 10px;">
+        Tu promedio: <div id="resultado">
+    </p>
 </body>
 
 </html>
