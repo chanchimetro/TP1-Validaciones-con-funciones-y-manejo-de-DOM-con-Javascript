@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<!--
+    Validaciones: 
+
+    [X] Los campos deben ser obligatorios. Si no esta completo utilizar un alert para indicarlo.
+    [X] Las notas deberan ser validadas con javascript. El valor debera ser entre 1 y 10 inclusives. La validacion debe realizarse al momento de presionar una tecla invocando al evento correspondiente. Si es correcto se muestra en verde y si no es correcto en rojo.
+    [X] El resultado del promedio debe mostrarse en verde si es mayor o igual a 6 y en rojo si es menor.
+    [] El nombre de la materia que mayor nota tuvo debe mostrarse en Azul. Si son varias las materias mostrar todos los nombres.
+    
+    Propuesta opcional:
+
+    [] Ademas del div con los texto sumar una imagen que represente lo ocurrido al presionar cada boton. Usar un unico tag img y mediante javascript modificar el src para modificar la imagen. Pueden usar gif animados si lo desean para ponerle mas onda. Por ejemplo: cuando el promedio sea mayor a 6 mostrar algun festejo. Si reprobo mostrar algo que represente dicha situacion. 
+    [] En caso de realizarlo, la imagen deberia comenzar mostrando algo de bienvenida, y se ira modificando segun las acciones que se realicen.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts.js"></script>
+</head>
+<body>
+        <ul>
+            <li>Nota matematica: <input type="text" id="matematica" onkeyup="validarNota('matematica')"></li>
+            <li style="margin-top: 5px; margin-bottom: 5px;">Nota lengua: <input type="text" id="lengua" onkeyup="validarNota('lengua')"></li>
+            <li>Nota EFSI: <input type="text" id="efsi" onkeyup="validarNota('efsi')"></li>
+        </ul>
+        <button onclick="sacarPromedio()">Promedio</button>
+        <button onclick="sacarMayorNota()">Mayor nota</button>
+        <div style="margin-top: 5px;" id="resultado">
+
+        </div>
+</body>
+</html>
