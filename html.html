@@ -15,6 +15,7 @@
 -->
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,16 +23,30 @@
     <title>Document</title>
     <script src="scripts.js"></script>
 </head>
-<body>
-        <ul>
-            <li>Nota matematica: <input type="text" id="matematica" onkeyup="validarNota('matematica')"></li>
-            <li style="margin-top: 5px; margin-bottom: 5px;">Nota lengua: <input type="text" id="lengua" onkeyup="validarNota('lengua')"></li>
-            <li>Nota EFSI: <input type="text" id="efsi" onkeyup="validarNota('efsi')"></li>
-        </ul>
-        <button onclick="sacarPromedio()">Promedio</button>
-        <button onclick="sacarMayorNota()">Mayor nota</button>
-        <div style="margin-top: 5px;" id="resultado">
 
-        </div>
+<body>
+    <ul>
+        <li>Nota matematica: <input type="text" id="matematica" onkeyup="validarNota('matematica')"></li>
+        <li style="margin-top: 5px; margin-bottom: 5px;">Nota lengua: <input type="text" id="lengua"
+                onkeyup="validarNota('lengua')"></li>
+        <li>Nota EFSI: <input type="text" id="efsi" onkeyup="validarNota('efsi')"></li>
+    </ul>
+
+    <h3>Tus notas:</h3>
+    <ul>
+        <li id="limatematica">Matematica: </li>
+        <li id="lilengua">Lengua: </li>
+        <li id="liefsi">EFSI: </li>
+    </ul>
+
+    <button onclick="sacarPromedio()">Promedio</button>
+    <button onclick="sacarMayorNota()">Mayor nota</button>
+
+    <div>
+        <img id ="img" src="imgs/monkey-neutral.gif" alt="foto">
+    
+        <div style="margin-top: 5px;" id="resultado"></div>
+    </div>
 </body>
+
 </html>
